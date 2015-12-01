@@ -2,10 +2,12 @@
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
     <entity name="Catalog" representedClassName=".Entity" syncable="YES">
         <attribute name="console" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateGiven" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="game" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lender" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Catalog" positionX="-45" positionY="0" width="128" height="88"/>
+        <element name="Catalog" positionX="-45" positionY="0" width="128" height="120"/>
     </elements>
 </model>

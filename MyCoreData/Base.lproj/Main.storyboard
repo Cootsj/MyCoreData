@@ -109,8 +109,8 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Jlg-vV-wgF"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfG-DQ-LKA">
-                                <rect key="frame" x="178" y="224" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfG-DQ-LKA">
+                                <rect key="frame" x="178" y="300" width="46" height="30"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="wLL-9A-9fX"/>
@@ -140,6 +140,24 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Given" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cbB-kJ-bqG">
+                                <rect key="frame" x="178" y="262" width="222" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="95h-64-Xgn"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ua3-7b-be0">
+                                <rect key="frame" x="178" y="224" width="222" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="QHj-cp-OqF"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -171,7 +189,9 @@
                         <outlet property="btnback" destination="ed6-oQ-cA6" id="i5s-qE-lJp"/>
                         <outlet property="btnsave" destination="PfG-DQ-LKA" id="WVq-F9-qpx"/>
                         <outlet property="console" destination="llV-tL-2Dg" id="d1t-4n-1Vt"/>
+                        <outlet property="dateGiven" destination="cbB-kJ-bqG" id="D3q-l2-zkA"/>
                         <outlet property="game" destination="sGi-pH-Ldk" id="jCB-Nr-07f"/>
+                        <outlet property="lender" destination="Ua3-7b-be0" id="xKY-34-juN"/>
                         <outlet property="location" destination="STc-nY-PyO" id="9ih-nH-gnG"/>
                         <outlet property="status" destination="IKx-iA-MID" id="yKS-KK-RNa"/>
                     </connections>

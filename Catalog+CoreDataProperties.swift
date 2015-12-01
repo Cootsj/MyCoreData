@@ -17,5 +17,7 @@ extension Catalog {
     @NSManaged var game: String?
     @NSManaged var console: String?
     @NSManaged var location: String?
+    @NSManaged var lender: String?
+    @NSManaged var dateGiven: String?
 
 }

@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var game: UITextField!
     @IBOutlet weak var console: UITextField!
     @IBOutlet weak var location: UITextField!
+    @IBOutlet weak var lender: UITextField!
+    @IBOutlet weak var dateGiven: UITextField!
     
     @IBOutlet weak var status: UILabel!
     @IBOutlet weak var btnsave: UIButton!
@@ -37,6 +39,8 @@ class ViewController: UIViewController {
             catalogdb.setValue(game.text, forKey: "game")
             catalogdb.setValue(console.text, forKey: "console")
             catalogdb.setValue(location.text, forKey: "location")
+            catalogdb.setValue(lender.text, forKey: "lender")
+            catalogdb.setValue(dateGiven.text, forKey: "dateGiven")
         }
         else
         {
@@ -49,6 +53,8 @@ class ViewController: UIViewController {
             catalog.game = game.text!
             catalog.console = console.text!
             catalog.location = location.text!
+            catalog.lender = lender.text!
+            catalog.dateGiven = dateGiven.text!
         }
         var error: NSError?
         do {
@@ -72,6 +78,8 @@ class ViewController: UIViewController {
             game.text = catalogdb.valueForKey("game") as? String
             console.text = catalogdb.valueForKey("console") as? String
             location.text = catalogdb.valueForKey("location") as? String
+            lender.text = catalogdb.valueForKey("lender") as? String
+            dateGiven.text = catalogdb.valueForKey("dateGiven") as? String
             btnsave.setTitle("Update", forState: UIControlState.Normal)
         }
         game.becomeFirstResponder()
@@ -98,6 +106,8 @@ class ViewController: UIViewController {
         game.endEditing(true)
         console.endEditing(true)
         location.endEditing(true)
+        lender.endEditing(true)
+        dateGiven.endEditing(true)
     }
     func textFieldShouldReturn(textField: UITextField!) -> Bool     {
         textField.resignFirstResponder()
