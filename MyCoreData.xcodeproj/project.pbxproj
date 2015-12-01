@@ -13,6 +13,9 @@
 		AFDF851A1C0D60A40017357F /* MyCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFDF85181C0D60A40017357F /* MyCoreData.xcdatamodeld */; };
 		AFDF851C1C0D60A40017357F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFDF851B1C0D60A40017357F /* Assets.xcassets */; };
 		AFDF851F1C0D60A40017357F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFDF851D1C0D60A40017357F /* LaunchScreen.storyboard */; };
+		AFDF85301C0D628A0017357F /* Catalog+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF852E1C0D628A0017357F /* Catalog+CoreDataProperties.swift */; };
+		AFDF85311C0D628A0017357F /* Catalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF852F1C0D628A0017357F /* Catalog.swift */; };
+		AFDF85331C0D66DD0017357F /* CatalogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF85321C0D66DD0017357F /* CatalogTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		AFDF851B1C0D60A40017357F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFDF851E1C0D60A40017357F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFDF85201C0D60A40017357F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFDF852E1C0D628A0017357F /* Catalog+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Catalog+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AFDF852F1C0D628A0017357F /* Catalog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catalog.swift; sourceTree = "<group>"; };
+		AFDF85321C0D66DD0017357F /* CatalogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,9 @@
 		AFDF85051C0D60A40017357F = {
 			isa = PBXGroup;
 			children = (
+				AFDF85321C0D66DD0017357F /* CatalogTableViewController.swift */,
+				AFDF852E1C0D628A0017357F /* Catalog+CoreDataProperties.swift */,
+				AFDF852F1C0D628A0017357F /* Catalog.swift */,
 				AFDF85101C0D60A40017357F /* MyCoreData */,
 				AFDF850F1C0D60A40017357F /* Products */,
 			);
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFDF85331C0D66DD0017357F /* CatalogTableViewController.swift in Sources */,
 				AFDF85141C0D60A40017357F /* ViewController.swift in Sources */,
+				AFDF85311C0D628A0017357F /* Catalog.swift in Sources */,
 				AFDF85121C0D60A40017357F /* AppDelegate.swift in Sources */,
+				AFDF85301C0D628A0017357F /* Catalog+CoreDataProperties.swift in Sources */,
 				AFDF851A1C0D60A40017357F /* MyCoreData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
